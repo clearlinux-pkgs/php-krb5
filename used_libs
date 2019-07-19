@@ -1,0 +1,4 @@
+libc.so.6
+libgssapi_krb5.so.2
+libk5crypto.so.3
+libkrb5.so.3
