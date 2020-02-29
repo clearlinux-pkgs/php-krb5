@@ -4,7 +4,7 @@
 #
 Name     : php-krb5
 Version  : 1.1.2
-Release  : 3
+Release  : 4
 URL      : https://pecl.php.net//get/krb5-1.1.2.tgz
 Source0  : https://pecl.php.net//get/krb5-1.1.2.tgz
 Summary  : No detailed summary available
