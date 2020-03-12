@@ -6,5 +6,7 @@ Configure miss: if zts is enabled
 Configure miss: path to krb5config tool
 Configure miss: kerberos KADM5 support
 Configure miss: krb5_free_string
+Configure miss: gss_acquire_cred_from
 Configure miss: krb5_chpw_message
 Configure miss: krb5_principal_get_realm
+Configure miss: krb5_get_init_creds_opt_set_expire_callback
