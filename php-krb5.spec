@@ -4,7 +4,7 @@
 #
 Name     : php-krb5
 Version  : 1.1.4
-Release  : 13
+Release  : 14
 URL      : https://pecl.php.net/get/krb5-1.1.4.tgz
 Source0  : https://pecl.php.net/get/krb5-1.1.4.tgz
 Summary  : No detailed summary available
@@ -70,4 +70,4 @@ make  %{?_smp_mflags}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20200930/krb5.so
+/usr/lib64/extensions/no-debug-non-zts-20210902/krb5.so
