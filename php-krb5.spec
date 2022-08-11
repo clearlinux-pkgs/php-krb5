@@ -4,7 +4,7 @@
 #
 Name     : php-krb5
 Version  : 1.1.4
-Release  : 19
+Release  : 20
 URL      : https://pecl.php.net/get/krb5-1.1.4.tgz
 Source0  : https://pecl.php.net/get/krb5-1.1.4.tgz
 Summary  : No detailed summary available
