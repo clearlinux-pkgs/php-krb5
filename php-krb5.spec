@@ -4,13 +4,14 @@
 #
 Name     : php-krb5
 Version  : 1.1.4
-Release  : 29
+Release  : 30
 URL      : https://pecl.php.net/get/krb5-1.1.4.tgz
 Source0  : https://pecl.php.net/get/krb5-1.1.4.tgz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
 Requires: php-krb5-lib = %{version}-%{release}
+Requires: php-krb5-license = %{version}-%{release}
 BuildRequires : buildreq-php
 BuildRequires : e2fsprogs-dev
 BuildRequires : krb5-dev
@@ -38,9 +39,18 @@ dev components for the php-krb5 package.
 %package lib
 Summary: lib components for the php-krb5 package.
 Group: Libraries
+Requires: php-krb5-license = %{version}-%{release}
 
 %description lib
 lib components for the php-krb5 package.
+
+
+%package license
+Summary: license components for the php-krb5 package.
+Group: Default
+
+%description license
+license components for the php-krb5 package.
 
 
 %prep
@@ -56,6 +66,8 @@ phpize
 make  %{?_smp_mflags}
 
 %install
+mkdir -p %{buildroot}/usr/share/package-licenses/php-krb5
+cp %{_builddir}/krb5-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/php-krb5/aad4b713782c4db74d175063937b5fc1c97063db
 %make_install
 
 
@@ -70,4 +82,8 @@ make  %{?_smp_mflags}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20210902/krb5.so
+/usr/lib64/extensions/no-debug-non-zts-20220829/krb5.so
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/php-krb5/aad4b713782c4db74d175063937b5fc1c97063db
