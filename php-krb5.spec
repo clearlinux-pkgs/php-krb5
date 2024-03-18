@@ -7,7 +7,7 @@
 #
 Name     : php-krb5
 Version  : 1.1.5
-Release  : 60
+Release  : 61
 URL      : https://pecl.php.net/get/krb5-1.1.5.tgz
 Source0  : https://pecl.php.net/get/krb5-1.1.5.tgz
 Summary  : No detailed summary available
